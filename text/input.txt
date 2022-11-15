@@ -1,0 +1,145 @@
+#?interface A {}
+interface B {}
+
+class C implements A, B, C, D  {}
+class A implements A, B, C, D  {}
+
+
+$mfunction main void() {}
+$function print bool() {
+  return fn();
+  
+}
+
+?#
+#?
+abstract class ahmed_bicycle {
+  shared {
+    static $function speed void(){
+      take int: velocity = 250;
+    } 
+  }
+  own{
+  }
+}
+
+enum year = {Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec};
+
+class Fruit {
+  shared {
+    take string: name = functionCall(5, True, "Ada", dad);
+    take name: lmao;
+    $function Fruit void (){}
+  }
+  own {
+    take string: name = functionCall(5, True, "Ada", dad);
+    take string: name;
+  }
+    
+}
+
+class Apple child_of Fruit{
+  shared{}
+  own{}
+}
+
+abstract class people {
+  shared{
+    take string: name, float: age, string: gender;
+    $function people void (string name, float age, string gender){
+      this.name = name;
+      this.gender = gender;
+      this.age = age;
+    }
+  }
+}
+
+fixed class user child_of people {
+  shared {
+    take string: name, float: age, string: gender;
+    $function user void (string name, float age, string gender, string NIC, string gfname){
+      super.people(name, age, gender);
+      this.NIC = NIC;
+      this.gfname = gfname;
+    }
+  }
+  own {
+    take string: NIC;
+    take string: gfname;
+  }
+
+}
+
+
+$mfunction main void(){
+  #a = a.b.c*present.x + 5;
+  #arr[i] = 5;
+  #arr[i] = arr[j];
+  #?take string[] : names =  ["ahmed", "adeel", name1];
+  take string: name = functionCall(5, True, "Ada", dad);
+  a.b.c = 5;
+  fn().b = 5;
+  #fn() = 5;
+  arr[i] = 5;
+  if (age >= 18){
+    result = "You can drink";
+  } elif(age < 18) {
+    result = "You can not drink";
+  } elif(age < 18) {
+    result = "You can not drink";
+  } elif(age < 18) {
+    result = "You can not drink";
+  } else {
+    result = "Fuck off now";
+  }
+  while(iterator > 1) {
+    if(iterator == 50) {
+      iterator -= 10;
+    }
+    continue;
+    if(iterator == 10) {
+    }
+    i--;
+  }
+  for(i = 0; i <= 10; ++i){
+    for(i = 0; i <= 10; ++i){
+      while(iterator > 1) {
+        if(iterator == 50) {
+          iterator -= 10;
+        }
+        continue;
+        if(iterator == 10) {
+        }
+        i--;
+      }
+    }
+  }
+  switch(True){
+    case 1 {break;}
+    case 2 {break;}
+    default {}
+  }
+}
+
+$function print void() {
+  switch(True){
+    case 1 {break;}
+    case 2 {break;}
+    default {}
+  }
+}?#
+
+$mfunction main void() {
+  
+}
+
+abstract class people {
+  shared{
+    take string: name, float: age, string: gender;
+    $function people void (string name, float age, string gender){
+      this.name = name;
+      this.gender = gender;
+      this.age = age;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+defs -- > fixed n abstract n $function n enum n interface n $mfunction n $  = E
+
+SST -->  while n for n return n switch n break n continue n if n take n ID n ++ n --  = E
+SST! --> = n CO n ( n ++ n -- n n n [ n ;  = E
+SST2 -->  ; n . = E
+
+MST --> while n for n return n switch n break n continue n if n take n ID n ++ n -- n } n break = E
+assign --> ID n E = E
+assign_operator --> = n CO  = E
+
+assign1 --> . n ( n [ n = n CO  = E
+assign_list --> , n ; = E
+
+dec --> take n E = E
+dec0 --> dt n ID = E
+dec1 = ,,;  n =   = E 
+dec_list --> ,,; n E = E
+dec2 --> [ n new n present n super n ID n const n ( n not  = E
+
+f_Dt --> Dt n ID = E
+f_Dt1 --> Dt n ID n void = E
+f_arr --> [] n : n ( = E
+
+ exp --> present n super n ID n const n ( n not = E
+
+exp' --> OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --}, n break = E
+AE --> present n super n ID n const n ( n not = E
+
+AE' --> AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+RE --> present n super n ID n const n ( n not = E
+
+RE' --> ROP n AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+
+E --> present n super n ID n const n ( n not = E
+
+E' --> PM n ROP n AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+T --> present n super n ID n const n ( n not = E
+
+
+T' --> MDM n PM n ROP n AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+
+F --> present n super n ID n const n ( n not
+O--> [ n ( n . n  MDM n PM n ROP n AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+O' --> . n MDM n PM n ROP n AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+
+TS --> present n super n MDM n PM n ROP n AND n OR n ] n ,,) n present n super n ID n const n ( n not n ; n while n for n return n switch n break n continue n if n take n ID n ++ n --} , n break = E
+
+argu --> present n super n not n ) n ] = E
+argu1 --> , n ) n ] = E
+while_St --> while n E = E
+for_st --> for n E = E
+inc_dec --> ID n ++ n -- = E
+inc_dec_opr --> ++ n -- = E
+
+fixed --> fixed n abstract n class n static n take n $function = E
+abstract --> abstract n class n static n take n $function = E
+static --> static n take n abstract n $function 
+class_dec --> fixed n abstract n class 
+inheritance --> child_of n { = E
+multi_ID --> , n { = E
+interface --> interface n fixed n abstract n class n $function n enum n  $mfunction n $ = E
+interface_body --> take n $function = E
+interface_body1 --> take n $function = E
+CB --> shared n own n } = E
+CB0 --> shared n own n } = E
+CB1 --> own n } = E
+
+CB2 --> fixed n static n abstract n $function n take n ID n } = E
+CB3 --> take n abstract n $ function --> E
+CB4 --> ( n . n [  = E
+CB5 --> fixed n static n abstract n $function n take n ID n } n . = E
+
+CB6 --> = n CO = E
+
+
+c_f_body --> this n super n while n for n return n switch n break n continue n if n take n ID n ++ n --  n } = E
+c_f_body1 --> ID n E = E
+c_f_body2 --> ( n . n ] n = n ; = E
+c_f_body3 --> . n ; = E
+
+continue  --> continue n E = E
+break --> break n E = E
+return --> return n E = E
+return1 --> True n False n present n super n ID n const n ( n not n take = E
+return2 --> , n while n for n return n switch n break n continue n if n take n ID n ++ n -- n } n break = E 
+
+
+
+
+
+
+
+
+
+

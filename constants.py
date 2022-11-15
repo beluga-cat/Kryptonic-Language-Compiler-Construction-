@@ -1,0 +1,47 @@
+keywords: dict[str, list[str]] = {
+    "data_type": ["int", "float", "string", "bool"],
+    "main": ["main"],
+    "bool": ["True", "False"],
+    "class": ["class"],
+    "present": ["present"],
+    "super": ["super"],
+    "shared" : ["shared"],
+    "own" : ["own"],
+    "static": ["static"],
+    "abstract": ["abstract"],
+    "fixed": ["fixed"],
+    "new": ["new"],
+    "child_of": ["child_of"],
+    "$function": ["$function"],
+    "$mfunction": ["$mfunction"],
+    "return": ["return"],
+    "void": ["void"],
+    "if": ["if"],
+    "else": ["else"],
+    "elif": ["elif"],
+    "for": ["for"],
+    "while": ["while"],
+    "break": ["break"],
+    "continue": ["continue"],
+    "enum" : ["enum"],
+    "interface" : ["interface"],
+    "implements" : ["implements"],
+    "switch": ["switch"],
+    "case": ["case"],
+    "default": ["default"],
+    "take" : ["take"]
+}
+
+operators: dict[str, list[str]] = {
+    "inc_dec": ["++", "--"],
+    "plus_minus": ["+", "-"],
+    "multiply_divide_mod": ["*", "/", "%"],
+    "assignment": ["="],
+    "compound_assignment": ["+=", "-=", "*=", "/="],
+    "relational_operators": [">", "<", "==", ">=", "<=", "!="],
+    "and_operator": ["AND"],
+    "or_operator": ["OR"],
+    "not_operator": ["not"],
+}
+
+punctuators: list[str] = [":", ",", "(", ")", "{", "}", "[", "]", ".", ';']
